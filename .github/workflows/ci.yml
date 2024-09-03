@@ -25,11 +25,8 @@ jobs:
         run: chmod +x ./gradlew
         shell: bash
 
-      - name: test
-        run : echo $JAVA_HOME
-
       - name: Build with Gradle
-        run: ./gradlew test #-Dorg.gradle.java.home=%JAVA_HOME%
+        run: ./gradlew test -Dorg.gradle.java.home=$JAVA_HOME
         shell: bash
 
       - name: Upload coverage to Codecov
