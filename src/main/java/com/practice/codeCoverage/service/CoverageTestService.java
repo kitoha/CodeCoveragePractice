@@ -3,7 +3,7 @@ package com.practice.codeCoverage.service;
 import org.springframework.stereotype.Service;
 
 @Service
-public class coverageTestService {
+public class CoverageTestService {
 
     public String test(int value){
         int a= 1+value;
