@@ -15,4 +15,14 @@ public class CoverageTestService {
         }
 
     }
+
+    public String test2(int value){
+        int a = 1+value*2;
+
+        if(a==3){
+            return "Good!";
+        }else{
+            return "Failed";
+        }
+    }
 }
